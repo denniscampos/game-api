@@ -50,7 +50,7 @@ app.get('/api/games/:game', (request, response) => {
     }
 })
 
-app.listen(port.env.PORT || PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on ${PORT}`)
 })
 
